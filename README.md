@@ -8,4 +8,4 @@
 
 ## iOS
 使用 UIApplication.userDidTakeScreenshotNotification<br>
-此做法不需要權限，但適當監聽到截圖也不會回傳圖片名稱
+此做法不需要權限，但是當監聽到截圖也不會回傳圖片名稱
