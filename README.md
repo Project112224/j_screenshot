@@ -1,15 +1,11 @@
 # j_screenshot
 
-A new Flutter project.
+該插件是截圖監聽用
 
-## Getting Started
+## Android
+目前使用監聽 Storage 觸發，因此需開啟圖片權限，若使用者不同意則將截圖圖片變黑
+當監聽到圖片時預設回傳字串為圖片名稱
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+## iOS
+使用 UIApplication.userDidTakeScreenshotNotification
+此做法不需要權限，但適當監聽到截圖也不會回傳圖片名稱
